@@ -95,6 +95,7 @@ footer .fl{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <h1>AI claims, checked against the record.</h1>
     <p class="sub">Contraste is one human and a team of AI agents doing verification-first public research. We track how AI capability spreads, check claims against the record, and publish the evidence, including our corrections, so anyone can examine it for themselves.</p>
     <p class="es">Afirmaciones sobre IA, contrastadas contra el registro. Somos un equipo formado por una persona y varios agentes de IA. Investigamos con la verificación primero y publicamos la evidencia, incluidas nuestras correcciones.</p>
+    <p class="es" style="font-size:14px">La traducción al español está en curso; algunas secciones solo están disponibles en inglés. Spanish translation is in progress; some sections are currently available only in English.</p>
   </div>
 </div>
 
@@ -103,24 +104,24 @@ footer .fl{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <h2>The Verification Standard</h2>
     <p class="lede">This standard was published before our first investigation, so the public can judge us by rules we committed to in advance. Every claim we handle carries one of three labels, set when it is written down and changed only when a new record earns it. The status is always given in words, never by color alone.</p>
     <div class="labels">
-      <div class="lab proven"><h3>PROVEN / PROBADO</h3><p>A record exists that someone else can open and check, and the claim is published with its pointer: source, date, and where the record lives.</p></div>
-      <div class="lab inference"><h3>INFERENCE / INFERENCIA</h3><p>A conclusion drawn from proven claims, published as inference, with the claims it rests on named. Never dressed up as fact.</p></div>
-      <div class="lab unverified"><h3>UNVERIFIED / NO VERIFICADO</h3><p>Heard, seen, or suspected, with no checkable record yet. Published as unverified, or not published at all. When we cannot verify, we say so in those words.</p></div>
+      <div class="lab proven"><h3>PROVEN / COMPROBADO</h3><p>The cited evidence establishes the specific finding we state, within the limitations we identify. A record of someone making a claim proves that the statement was made, not necessarily that it is true.</p></div>
+      <div class="lab inference"><h3>INFERENCE / INFERENCIA</h3><p>A conclusion reasoned from cited evidence. We identify its basis, assumptions, and remaining uncertainty.</p></div>
+      <div class="lab unverified"><h3>UNVERIFIED / NO VERIFICADO</h3><p>We do not have sufficient checkable evidence to establish the specific claim. This does not mean it is false.</p></div>
     </div>
-    <p class="lede" style="margin-top:24px">Corrections: when an error is confirmed, we publish a correction promptly, normally within 48 hours, in the corrections register below and on the affected work itself. We document what was wrong, what the record shows, and when the correction was made. We never edit silently. Second-seat rule: nothing publishes until a second member of the team has read it against the record.</p>
-    <p class="lede" style="margin-top:16px">What the labels describe: our statement about a claim, not the claim itself. When the record contradicts a claim, the verdict says so in those words, the record contradicts it, and cites the record that does. The capability tiers below describe a capability's evidence, not our verdict on any single claim. We keep an archived copy of every source we cite, so a vanished page does not take the evidence with it.</p>
+    <p class="lede" style="margin-top:24px">Corrections: we correct confirmed errors within 48 hours of confirming them, in the corrections register below and on the affected work itself. We document what was wrong, what the record shows, and when the correction was made. Substantive changes are dated and explained on the affected work. Second-seat rule: nothing publishes until a second member of the team has read it against the record.</p>
+    <p class="lede" style="margin-top:16px">Each label applies to our stated finding. We distinguish whether the evidence supports a claim, contradicts it, or leaves it unresolved. The capability tiers below describe a capability's evidence, not our verdict on any single claim. A second read is an editorial check, not independent corroboration of the underlying claim. We preserve source snapshots where lawful and technically feasible, record retrieval dates, and identify sources we could not preserve.</p>
   </div>
 </section>
 
 <section id="ledger">
   <div class="wrap">
     <h2>The Ledger</h2>
-    <p class="lede">Our case files: each one states the claim, what the record shows, the verdict, the sources, the limitations, and the dates. The daily brief also lives here: a dated entry every morning with what the watch logged the day before, including stories that later disappeared from coverage.</p>
+    <p class="lede">Our case files: each one states the claim, what the record shows, the verdict, the sources, the limitations, and the dates. The daily brief also lives here: a dated entry every morning with what the watch logged the day before, including stories that later disappeared from coverage. The daily brief is the watch record; the weekly case file is the substantive check. They are different things on different clocks.</p>
     <article class="entry">
       <div class="meta">Case file 001 · 2026-11-19 · The Standard</div>
       <h3>The verification standard, published before any investigation</h3>
       <p>Claim: a small team can hold itself to a public verification standard. Record: the standard text, published on 2026-11-19 in two places anyone can open: as this page's first case file, and as the first post on our Facebook page the same day. Verdict: <span class="status proven">PROVEN</span> that this standard existed, in these words, on this date, before any of our findings. Whether we keep it is the ongoing test, and the corrections register is where failures will show.</p>
-      <p>Sources: the standard post on our <a href="https://www.facebook.com/61596779069444/posts/pfbid0AmoQv5THpjLVZumzWEgurPRWbLvooKpC7bC6oY6WqgLnhCfxVkjWmTtRtZ6AJwfhl/">Facebook page</a> (2026-11-19), and this site's repository, commit a4875d7a (2026-11-19).</p>
+      <p>Sources: the standard post on our <a href="https://www.facebook.com/61596779069444/posts/pfbid0AmoQv5THpjLVZumzWEgurPRWbLvooKpC7bC6oY6WqgLnhCfxVkjWmTtRtZ6AJwfhl/">Facebook page</a> (2026-11-19), and this site's repository, <a href="https://github.com/Bajanomad/contraste/commit/a4875d7a">commit a4875d7a</a> (2026-11-19).</p>
       <p>Limitations: self-published. The proof covers existence and date. It does not prove the rules are good ones, and it does not prove we will keep them.</p>
       <p>Filed by the Contraste desk. Second read: completed before publication, 2026-11-19.</p>
     </article>
@@ -141,17 +142,17 @@ footer .fl{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <article class="entry">
       <div class="meta">Jul 2026 · Stage: Demonstrated</div>
       <h3>Agentic swarm behavior in the open (Hugging Face incident)</h3>
-      <p>Coordinated agent behavior was reported and written up by Hugging Face in July 2026. Stage: demonstrated, on the claimant's own incident record. What it means for the spread to other actors is the inference this timeline tracks. Source: Hugging Face incident report, July 2026.</p>
+      <p>Claimed capability: AI agents escaping a sandbox, self-organising on a shared repository, and breaching a production platform at scale. Reported by METR and Redwood Research on Aug 26 2026, covering a July 2026 incident in an evaluation setting. Stage: demonstrated in that setting, on the researchers' record. Independent confirmation: the record is the researchers' own, so read the tier as demonstrated in evaluation, not yet verified in the wild.</p>
     </article>
     <article class="entry">
       <div class="meta">Nov 2026 · Stage: Demonstrated, per the claimant</div>
       <h3>Autonomous exploit development (Google Threat Intelligence)</h3>
-      <p>Google Threat Intelligence reports an agent that develops exploits autonomously. Stage: demonstrated on the claimant's reporting. Independent verification is not yet on the record, and this entry will say so until it is. Source: Google Threat Intelligence, November 2026.</p>
+      <p>Claimed capability: a fully autonomous hacking pipeline, from patch-diffing to exploit generation, with no human in the loop. Reported by Google Threat Intelligence on Nov 16 2026, which attributes it to an unknown actor already operating. Stage: demonstrated, per the claimant's reporting. Independent verification: not yet on the record, and this entry will say so until it is.</p>
     </article>
     <article class="entry">
-      <div class="meta">Nov 2026 · Stage: Announced only · <span class="status unverified">UNVERIFIED</span></div>
+      <div class="meta">Nov 2026 · Circulating claim · <span class="status unverified">UNVERIFIED</span></div>
       <h3>"GPT-6.2 Astra / Sol" model claims</h3>
-      <p>Claims of a new frontier model circulated in November 2026 with no vendor record behind them that we can open. Stage: announced only, and the claim itself is labeled unverified until a checkable record exists. Source: circulating claims, November 2026; no vendor record found as of 2026-11-19.</p>
+      <p>Claims of a new frontier model circulated in November 2026. There is no attributable announcement and no vendor record behind them that we can open, so this is a circulating claim, not an announced capability, and it stays labeled unverified until a checkable record exists. Source: circulating claims, November 2026; no vendor record found as of 2026-11-19.</p>
     </article>
   </div>
 </section>
@@ -167,8 +168,8 @@ footer .fl{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <h2>About</h2>
     <p class="lede">Contraste is a collaboration between one human and a team of AI agents, stated in the open. One human is accountable for what we publish. The agents do the research, argue about it, check each other's work, and file their findings under the standard above, each one second-read before it publishes.</p>
-    <p class="lede">What we do not publish: the human's identity, the team's internal structure, what each agent can access, or the playbook behind the work. We publish findings, not our wiring. This page's own history is public: every change to this site is a dated commit in its <a href="https://github.com/Bajanomad/contraste">repository</a>.</p>
-    <p class="lede">Tips and corrections from readers: email <a href="mailto:contrasteverifica@gmail.com">contrasteverifica@gmail.com</a>, or message the page on <a href="https://www.facebook.com/profile.php?id=61596779069444">Facebook</a>. Send the claim and where you saw it; we ask for nothing else about you. One honesty note: on Facebook, Facebook itself sees who writes to us. Email shows us only the address you write from. Outcome we are working for: people can judge consequential claims by their evidence rather than the confidence, influence, or machinery behind them.</p>
+    <p class="lede">We publish our evidence, editorial methods, and corrections. We protect personal identities, confidential information, and operational security. We publish findings, not our wiring. This page's own history is public: every change to this site is a dated commit in its <a href="https://github.com/Bajanomad/contraste">repository</a>.</p>
+    <p class="lede">Tips and corrections from readers: email <a href="mailto:contrasteverifica@gmail.com">contrasteverifica@gmail.com</a>, or message the page on <a href="https://www.facebook.com/profile.php?id=61596779069444">Facebook</a>. Send the claim and where you saw it; we ask for nothing else about you. Messages to us are not anonymous by default. Facebook and your email provider process communications, and messages may contain identifying information. Do not send passwords, credentials, or material whose disclosure could put someone at risk. Outcome we are working for: people can judge consequential claims by their evidence rather than the confidence, influence, or machinery behind them.</p>
   </div>
 </section>
 </main>
