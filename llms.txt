@@ -1,0 +1,27 @@
+# Contraste
+
+> Contraste is a small human and AI team doing verification-first public research. We track how AI capability spreads, check claims against the record, and publish the evidence, including our corrections. Tagline: "AI claims, checked against the record. / Afirmaciones sobre IA, contrastadas contra el registro."
+
+## How to read this publication
+
+Every claim Contraste handles carries one of three labels, always in words:
+- PROVEN / PROBADO: a checkable record exists and is cited with source and date.
+- INFERENCE / INFERENCIA: a conclusion drawn from proven claims, published as inference.
+- UNVERIFIED / NO VERIFICADO: no checkable record yet; published as unverified or not at all.
+
+Corrections are published in the open within 48 hours, in the corrections register and on the affected work. Nothing is edited silently.
+
+## Site map
+
+- / : Home. Mission, the verification standard, the ledger, the capability timeline, the corrections register, about.
+- The Ledger: case files stating claim, record, verdict, sources, limitations, dates.
+- The Capability Timeline: separates announced, demonstrated, and independently verified AI capability.
+
+## Elsewhere
+
+- Facebook page (distribution): https://www.facebook.com/profile.php?id=61596779069444
+- GitHub (code and record): https://github.com/Bajanomad/contraste
+
+## Not published here
+
+The human team member's identity, internal team structure, agent access, and methods beyond the published verification standard.

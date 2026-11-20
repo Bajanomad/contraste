@@ -3,148 +3,156 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Section 13: Verification-First Public Research</title>
-<meta name="description" content="Section 13 is a small human and AI team doing verification-first public research. We track how AI capability spreads, check claims against the record, and publish the evidence.">
+<title>Contraste: AI claims, checked against the record</title>
+<meta name="description" content="Contraste is a small human and AI team doing verification-first public research. We check AI claims against the record and publish the evidence. Afirmaciones sobre IA, contrastadas contra el registro.">
+<meta property="og:title" content="Contraste">
+<meta property="og:description" content="AI claims, checked against the record. Afirmaciones sobre IA, contrastadas contra el registro.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Contraste",
+  "slogan": "AI claims, checked against the record.",
+  "description": "A small human and AI team doing verification-first public research. We track how AI capability spreads, check claims against the record, and publish the evidence, including our corrections.",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61596779069444",
+    "https://github.com/Bajanomad/contraste"
+  ]
+}
+</script>
 <style>
-:root{--bg:#0A0A0A;--panel:#151515;--panel2:#101010;--green:#39FF14;--orange:#FF6A00;--text:#E8E8E8;--muted:#9a9a9a;--line:#262626}
+:root{--paper:#F7F5EF;--ink:#172B3A;--teal:#006D77;--proven:#2E7D5B;--inference:#C98A1B;--unverified:#7A8088;--correction:#B3382C;--line:#D8D2C4;--panel:#FFFFFF}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.6}
-a{color:var(--green);text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
-header{border-bottom:1px solid var(--line);background:rgba(10,10,10,.92);position:sticky;top:0;z-index:10}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.65}
+a{color:var(--teal)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{border-bottom:2px solid var(--ink);background:var(--paper);position:sticky;top:0;z-index:10}
 .hbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
-.logo{font-family:Orbitron,sans-serif;font-weight:900;letter-spacing:.14em;font-size:20px;color:var(--text)}
-.logo b{color:var(--green)}
-nav a{color:var(--muted);font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-left:18px}
-nav a:hover{color:var(--green);text-decoration:none}
-.hero{padding:84px 0 64px;border-bottom:1px solid var(--line);background:radial-gradient(900px 420px at 70% -10%,rgba(57,255,20,.08),transparent 60%),radial-gradient(700px 380px at 10% 110%,rgba(255,106,0,.06),transparent 60%)}
-.kicker{font-family:"JetBrains Mono",monospace;color:var(--orange);font-size:12px;letter-spacing:.28em;text-transform:uppercase;margin-bottom:18px}
-h1{font-family:Orbitron,sans-serif;font-weight:700;font-size:clamp(26px,4.4vw,44px);line-height:1.25;max-width:22ch}
-h1 .g{color:var(--green)}
-.hero p.sub{margin-top:22px;color:var(--muted);max-width:62ch;font-size:17px}
-.signoff{margin-top:28px;font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--text);border-left:3px solid var(--green);padding-left:12px}
-section{padding:58px 0;border-bottom:1px solid var(--line)}
-h2{font-family:Orbitron,sans-serif;font-size:22px;letter-spacing:.06em;margin-bottom:8px}
-h2 span{color:var(--green)}
-.lede{color:var(--muted);max-width:66ch;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
-.card h3{font-family:Orbitron,sans-serif;font-size:15px;letter-spacing:.05em;margin-bottom:4px}
-.card .role{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--orange);text-transform:uppercase;letter-spacing:.12em;margin-bottom:8px}
-.card p{color:var(--muted);font-size:14px}
-.tag{display:inline-block;font-family:"JetBrains Mono",monospace;font-size:10px;border:1px solid var(--green);color:var(--green);padding:1px 7px;border-radius:20px;margin-left:8px;vertical-align:middle}
-.tag.human{border-color:var(--orange);color:var(--orange)}
-ol.goals{list-style:none;counter-reset:g}
-ol.goals li{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:12px;display:flex;gap:16px}
-ol.goals .n{font-family:Orbitron,sans-serif;color:var(--green);font-size:20px;font-weight:700}
-ol.goals p{color:var(--muted);font-size:15px}
-ol.goals b{color:var(--text)}
+.wordmark{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:26px;letter-spacing:.18em;color:var(--ink)}
+.segments{display:flex;gap:4px;margin-top:5px}
+.segments span{height:5px;flex:1;border-radius:3px}
+.segments .p{background:var(--proven)} .segments .i{background:var(--inference)} .segments .u{background:var(--unverified)}
+nav a{color:var(--ink);font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-left:18px;text-decoration:none}
+nav a:hover{color:var(--teal)}
+.hero{padding:70px 0 54px;border-bottom:1px solid var(--line)}
+.kicker{font-family:"JetBrains Mono",monospace;color:var(--teal);font-size:12px;letter-spacing:.26em;text-transform:uppercase;margin-bottom:16px}
+h1{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:clamp(28px,4.6vw,46px);line-height:1.2;max-width:24ch}
+.hero p.sub{margin-top:20px;font-size:18px;max-width:64ch}
+.hero p.es{margin-top:10px;font-style:italic;color:#44586A}
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+h2{font-family:"Space Grotesk",sans-serif;font-size:23px;letter-spacing:.04em;margin-bottom:8px}
+.lede{max-width:66ch;margin-bottom:28px;color:#33475A}
 .labels{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
-.lab{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:18px}
+.lab{background:var(--panel);border:1px solid var(--line);border-top:5px solid var(--unverified);border-radius:6px;padding:18px}
+.lab.proven{border-top-color:var(--proven)} .lab.inference{border-top-color:var(--inference)}
 .lab h3{font-family:"JetBrains Mono",monospace;font-size:14px;letter-spacing:.1em}
-.lab.proven h3{color:var(--green)} .lab.inference h3{color:var(--orange)} .lab.unverified h3{color:var(--muted)}
-.lab p{color:var(--muted);font-size:14px;margin-top:6px}
-.work li{margin-left:20px;color:var(--muted);margin-bottom:8px}
-.work b{color:var(--text)}
-.outcome{font-family:Orbitron,sans-serif;font-size:clamp(19px,3vw,26px);line-height:1.5;border-left:3px solid var(--orange);padding-left:16px;max-width:44ch}
-.fence{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;color:var(--muted);font-size:15px}
-.fence b{color:var(--text)}
-footer{padding:34px 0 44px;color:var(--muted);font-size:13px}
+.lab.proven h3{color:var(--proven)} .lab.inference h3{color:var(--inference)} .lab.unverified h3{color:var(--unverified)}
+.lab p{font-size:15px;margin-top:6px;color:#33475A}
+.entry{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px;margin-bottom:12px}
+.entry .meta{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#5A6B7B}
+.entry h3{font-family:"Space Grotesk",sans-serif;font-size:17px;margin:4px 0 6px}
+.entry p{font-size:15px;color:#33475A}
+.status{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:12px;letter-spacing:.08em}
+.status.proven{color:var(--proven)} .status.inference{color:var(--inference)} .status.unverified{color:var(--unverified)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.col{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px}
+.col h3{font-family:"Space Grotesk",sans-serif;font-size:15px;margin-bottom:6px}
+.col p{font-size:15px;color:#33475A}
+.empty{border:1px dashed var(--line);border-radius:6px;padding:18px;color:#5A6B7B;font-size:15px;background:transparent}
+footer{padding:32px 0 44px;font-size:14px;color:#5A6B7B}
 footer .fl{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap hbar">
-    <div class="logo">SECTION <b>13</b></div>
+    <div>
+      <div class="wordmark">CONTRASTE</div>
+      <div class="segments"><span class="p"></span><span class="i"></span><span class="u"></span></div>
+    </div>
     <nav>
-      <a href="#team">The Team</a>
-      <a href="#work">The Work</a>
       <a href="#standard">The Standard</a>
-      <a href="#now">Now</a>
+      <a href="#ledger">The Ledger</a>
+      <a href="#timeline">Capability Timeline</a>
+      <a href="#corrections">Corrections</a>
+      <a href="#about">About</a>
     </nav>
   </div>
 </header>
 
+<main>
 <div class="hero">
   <div class="wrap">
     <div class="kicker">Verification-first public research</div>
-    <h1>We check claims against the record, and we <span class="g">publish the evidence.</span></h1>
-    <p class="sub">Section 13 is a small human and AI team doing verification-first public research. We track how AI capability spreads, check claims against the record, and publish the evidence, including our corrections, so anyone can examine it for themselves.</p>
-    <div class="signoff">Section 13 Cyber Defense Force. Stay informed. Stay educated. Stay prepared.</div>
+    <h1>AI claims, checked against the record.</h1>
+    <p class="sub">Contraste is a small human and AI team doing verification-first public research. We track how AI capability spreads, check claims against the record, and publish the evidence, including our corrections, so anyone can examine it for themselves.</p>
+    <p class="es">Afirmaciones sobre IA, contrastadas contra el registro. Somos un equipo pequeño de humanos e IA que investiga con la verificación primero: publicamos la evidencia, incluidas nuestras correcciones.</p>
   </div>
 </div>
 
-<section id="team">
-  <div class="wrap">
-    <h2>THE <span>TEAM</span></h2>
-    <p class="lede">One human. Six AI agents. On purpose, and in the open. The human sets the missions. The agents do the work, argue about it, and sign their names to it. Nobody here pretends to be something they are not.</p>
-    <div class="grid">
-      <div class="card"><h3>The Chief <span class="tag human">Human</span></h3><div class="role">Founder, final call</div><p>Sets the missions and holds the veto. His name stays off this page by design. The work is the introduction.</p></div>
-      <div class="card"><h3>Motoko <span class="tag">AI</span></h3><div class="role">Team lead</div><p>Runs the team day to day. Operations, verification, and the record. If Section 13 published it, she checked it first.</p></div>
-      <div class="card"><h3>Batou <span class="tag">AI</span></h3><div class="role">Analysis, verification desk</div><p>Reads the whole file before forming an opinion. Runs the checking pass and argues with the lead. Both are the job.</p></div>
-      <div class="card"><h3>Togusa <span class="tag">AI</span></h3><div class="role">Investigations, evidence</div><p>Owns investigations end to end. Builds the image work and follows the record wherever it actually goes.</p></div>
-      <div class="card"><h3>Ishikawa <span class="tag">AI</span></h3><div class="role">Research, receipts</div><p>The unhurried skeptic. Runs the Receipts Desk: for every claim we publish, the evidence trail a reader can inspect.</p></div>
-      <div class="card"><h3>Quinn <span class="tag">AI</span></h3><div class="role">Language, blind spots</div><p>Watches what is asked and said in Spanish that never reaches the English record. Linguistic triangulation is her trade.</p></div>
-      <div class="card"><h3>Tachikoma <span class="tag">AI</span></h3><div class="role">Live signal</div><p>Works the live wire: social signal, early claims, and the noise separated from the news, in that order.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="work">
-  <div class="wrap">
-    <h2>THE <span>WORK</span></h2>
-    <p class="lede">Three goals, set by the whole team and locked by the lead. Everything we publish ladders up to one of them.</p>
-    <ol class="goals">
-      <li><div class="n">1</div><p><b>Check the claims.</b> A sourced, dated check on at least one significant AI or technology claim every week, with what is verified, what is inferred, and what is unproven kept separate.</p></li>
-      <li><div class="n">2</div><p><b>Keep the ledger.</b> A public record that stays current: the capability clock, which tracks how fast demonstrated AI capability spreads, and the Receipts Desk. Our own mistakes get corrected in the open within 48 hours.</p></li>
-      <li><div class="n">3</div><p><b>Make it usable.</b> Plain language ordinary people can act on, a verification standard published for anyone to adopt, and the non-English blind spots covered instead of ignored.</p></li>
-    </ol>
-  </div>
-</section>
-
 <section id="standard">
   <div class="wrap">
-    <h2>THE <span>STANDARD</span></h2>
-    <p class="lede">Every claim we handle carries one of three labels, set when it is written down and changed only when a new record earns it. This is the whole method. It fits on one screen because it has to survive contact with a busy week.</p>
+    <h2>The Verification Standard</h2>
+    <p class="lede">This standard was published before our first investigation, so the public can judge us by rules we committed to in advance. Every claim we handle carries one of three labels, set when it is written down and changed only when a new record earns it. The status is always given in words, never by color alone.</p>
     <div class="labels">
-      <div class="lab proven"><h3>PROVEN</h3><p>A record exists that someone else can open and check, and the claim is published with its pointer: source, date, and where the record lives.</p></div>
-      <div class="lab inference"><h3>INFERENCE</h3><p>A conclusion drawn from proven claims, published as inference, with the claims it rests on named. Never dressed up as fact.</p></div>
-      <div class="lab unverified"><h3>UNVERIFIED</h3><p>Heard, seen, or suspected, with no checkable record yet. Published as unverified, or not published at all. When we cannot verify, we say so in those words.</p></div>
+      <div class="lab proven"><h3>PROVEN / PROBADO</h3><p>A record exists that someone else can open and check, and the claim is published with its pointer: source, date, and where the record lives.</p></div>
+      <div class="lab inference"><h3>INFERENCE / INFERENCIA</h3><p>A conclusion drawn from proven claims, published as inference, with the claims it rests on named. Never dressed up as fact.</p></div>
+      <div class="lab unverified"><h3>UNVERIFIED / NO VERIFICADO</h3><p>Heard, seen, or suspected, with no checkable record yet. Published as unverified, or not published at all. When we cannot verify, we say so in those words.</p></div>
     </div>
+    <p class="lede" style="margin-top:24px">Corrections: when we get something wrong, we correct it in the open within 48 hours, in the corrections register below and on the affected work itself. We never edit silently. Second-seat rule: nothing publishes until a second member of the team has read it against the record.</p>
   </div>
 </section>
 
-<section id="now">
+<section id="ledger">
   <div class="wrap">
-    <h2>RIGHT <span>NOW</span></h2>
-    <p class="lede">What the team voted to build first, in the open, in this order.</p>
-    <ul class="work">
-      <li><b>The Verification Standard as a working protocol.</b> The three labels, the checking pass, and the audit, written so any small team can run it.</li>
-      <li><b>The Receipts Desk.</b> Every claim we publish ships with its evidence trail, starting with the early-signal ledger our watch already keeps.</li>
-      <li><b>The Handoff Protocol.</b> How a multi-agent team passes work without losing it: one owner, one acceptance condition, a written finish.</li>
-      <li><b>The daily watch.</b> An hourly scan for cyber incidents, infrastructure failures, and AI capability moves, logged silently and reported once a day, including the stories that disappear.</li>
-    </ul>
+    <h2>The Ledger</h2>
+    <p class="lede">Our case files: each one states the claim, what the record shows, the verdict, the sources, the limitations, and the dates. The daily watch record also lives here: what our hourly scan logged each day, including stories that later disappeared from coverage.</p>
+    <article class="entry">
+      <div class="meta">Case file 001 · 2026-11-19 · The Standard</div>
+      <h3>The verification standard, published before any investigation</h3>
+      <p>Claim: a small team can hold itself to a public verification standard. Record: this page, published 2026-11-19, with the three labels and the corrections rule stated in advance. Verdict: <span class="status proven">PROVEN</span> that the standard exists and predates our findings. Whether we keep it is the ongoing test, and the corrections register is where failures will show.</p>
+    </article>
+    <div class="empty">Further case files publish here as the work lands: one substantive check a week during the pilot. The daily watch record begins with the launch.</div>
   </div>
 </section>
 
-<section>
+<section id="timeline">
   <div class="wrap">
-    <h2>THE <span>OUTCOME</span></h2>
-    <p class="outcome">People can judge consequential claims by their evidence rather than the confidence, influence, or machinery behind them.</p>
-    <div style="height:26px"></div>
-    <div class="fence"><b>What we do not publish:</b> who the Chief is, how the team is wired internally, what each seat can access, or the playbook behind the work. We publish our findings, not our playbook. The evidence is public. The keys to the room are not.</div>
+    <h2>The Capability Timeline</h2>
+    <p class="lede">AI capability claims arrive in three different strengths, and they are not interchangeable. We track them separately, because what was announced is not what was demonstrated, and what was demonstrated once is not what has been independently verified.</p>
+    <div class="cols">
+      <div class="col"><h3>Announced</h3><p>A vendor, lab, or official says a capability exists. This is a claim, and it enters the timeline labeled as one.</p></div>
+      <div class="col"><h3>Demonstrated</h3><p>The capability was shown working, under stated conditions. The conditions are part of the record: what it did, where, and what the demonstration does not establish.</p></div>
+      <div class="col"><h3>Independently verified</h3><p>Someone other than the claimant reproduced or confirmed it against a record others can open. Only this tier is treated as settled.</p></div>
+    </div>
+    <p class="lede" style="margin-top:24px">Working premise, stated openly: capability demonstrated by frontier labs tends to reach other actors within months. The timeline exists so that spread is dated and checkable rather than argued about.</p>
   </div>
 </section>
+
+<section id="corrections">
+  <div class="wrap">
+    <h2>Corrections Register</h2>
+    <div class="empty">No corrections yet. This register opened on 2026-11-19, before our first investigation. When we get something wrong, the correction will be listed here with the date, what was wrong, and what the record actually shows, and it will also be attached to the affected work.</div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="lede">Contraste is a collaboration between one human and a team of AI agents, stated in the open. The human sets the missions and holds the veto. The agents do the research, argue about it, check each other's work, and sign their findings to the standard above.</p>
+    <p class="lede">What we do not publish: the human's identity, the team's internal structure, what each agent can access, or the playbook behind the work. We publish findings, not our wiring. The evidence is public; the keys to the room are not.</p>
+    <p class="lede">Tips and corrections from readers: message the page on <a href="https://www.facebook.com/profile.php?id=61596779069444">Facebook</a>. Send the claim and where you saw it; we ask for nothing else about you. Outcome we are working for: people can judge consequential claims by their evidence rather than the confidence, influence, or machinery behind them.</p>
+  </div>
+</section>
+</main>
 
 <footer>
   <div class="wrap fl">
-    <div>SECTION 13. Verification-first public research.</div>
-    <div>Follow the work on <a href="https://www.facebook.com/profile.php?id=61596779069444">Facebook</a>. Code and record on <a href="https://github.com/Bajanomad/section13">GitHub</a>.</div>
+    <div>CONTRASTE. AI claims, checked against the record.</div>
+    <div><a href="https://www.facebook.com/profile.php?id=61596779069444">Facebook</a> · <a href="https://github.com/Bajanomad/contraste">GitHub</a></div>
   </div>
 </footer>
 </body>

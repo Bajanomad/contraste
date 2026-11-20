@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Contraste publishes for human and machine readers alike.
+# A plain-language map of this site for language models lives at /llms.txt
