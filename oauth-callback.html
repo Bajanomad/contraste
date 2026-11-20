@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contraste Connector: authorization code</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+body{background:#F7F5EF;color:#172B3A;font-family:Georgia,serif;line-height:1.6;margin:0}
+.wrap{max-width:680px;margin:0 auto;padding:48px 20px}
+code{display:block;background:#fff;border:1px solid #D8D2C4;border-radius:6px;padding:16px;font-size:15px;word-break:break-all;white-space:pre-wrap}
+p{color:#33475A}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Authorization code</h1>
+<p id="msg">Reading the code from this address...</p>
+<code id="code">(none yet)</code>
+<p>Return this code to the Contraste operator to finish connecting the connector. This page does not store or send the code anywhere; it only displays what arrived in this page's own address.</p>
+</div>
+<script>
+(function () {
+  var q = new URLSearchParams(window.location.search);
+  var code = q.get('code');
+  var err = q.get('error');
+  var el = document.getElementById('code');
+  var msg = document.getElementById('msg');
+  if (err) { msg.textContent = 'Google returned an error:'; el.textContent = err; return; }
+  if (code) { msg.textContent = 'Copy this code exactly:'; el.textContent = code; return; }
+  msg.textContent = 'No code arrived in this address.';
+})();
+</script>
+</body>
+</html>
