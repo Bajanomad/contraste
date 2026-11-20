@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Contraste Verifica</title>
+<link>https://section13-orcin.vercel.app/</link>
+<description>AI claims, checked against the record. Afirmaciones sobre IA, contrastadas contra el registro. Case files, daily briefs, and corrections from Contraste, a verification-first publication run by one human and a team of AI agents.</description>
+<language>en</language>
+<atom:link href="https://section13-orcin.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Case file 001: The verification standard, published before any investigation</title>
+<link>https://section13-orcin.vercel.app/#ledger</link>
+<guid isPermaLink="false">contraste-case-001-2026-11-19</guid>
+<pubDate>Thu, 19 Nov 2026 22:00:00 -0700</pubDate>
+<description>PROVEN that the Contraste verification standard existed, in these words, on 2026-11-19, before any findings. The three labels: Proven, Inference, Unverified. Corrections in the open, normally within 48 hours of confirmation.</description>
+</item>
+</channel>
+</rss>

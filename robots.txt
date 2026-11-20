@@ -1,5 +1,19 @@
+# Contraste crawler policy, deliberate by design:
+# search and retrieval crawlers are welcome; training crawlers are not.
+# Being cited by answer engines is the goal. Being ingested as training
+# data is a separate use, and it is not granted here.
+
 User-agent: *
 Allow: /
 
-# Contraste publishes for human and machine readers alike.
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
 # A plain-language map of this site for language models lives at /llms.txt
+Sitemap: https://section13-orcin.vercel.app/sitemap.xml
