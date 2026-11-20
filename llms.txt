@@ -5,7 +5,7 @@
 ## How to read this publication
 
 Every claim Contraste handles carries one of three labels, always in words:
-- PROVEN / COMPROBADO: the cited evidence establishes the specific finding stated, and is cited with source and date.
+- PROVEN / COMPROBADO: the cited evidence establishes the specific finding stated, and is cited with source and date. The record behind a PROVEN label is one anyone can open and check: source, date, link, and an archived copy where we can keep one.
 - INFERENCE / INFERENCIA: a conclusion drawn from proven claims, published as inference.
 - UNVERIFIED / NO VERIFICADO: no checkable record yet; published as unverified or not at all.
 
