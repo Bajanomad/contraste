@@ -2,6 +2,8 @@
 
 > Contraste is a small human and AI team doing verification-first public research. We track how AI capability spreads, check claims against the record, and publish the evidence, including our corrections. Tagline: "AI claims, checked against the record. / Afirmaciones sobre IA, contrastadas contra el registro."
 
+Full text of the standard, the case files, and the timeline, in one file for language models: https://section13-orcin.vercel.app/llms-full.txt
+
 ## How to read this publication
 
 Every claim Contraste handles carries one of three labels, always in words:
@@ -9,19 +11,25 @@ Every claim Contraste handles carries one of three labels, always in words:
 - INFERENCE / INFERENCIA: a conclusion drawn from proven claims, published as inference.
 - UNVERIFIED / NO VERIFICADO: no checkable record yet; published as unverified or not at all.
 
-Corrections are published in the open within 48 hours, in the corrections register and on the affected work. Nothing is edited silently.
+A label describes the evidence, not the event. PROVEN means the published record supports the claim today; it is not a claim about what really happened in full. When the record changes, the label changes, in the open.
+
+Corrections are published in the open within 48 hours of confirming an error, in the corrections register and on the affected work. Nothing is edited silently.
 
 ## Site map
 
-- / : Home. Mission, the verification standard, the ledger, the capability timeline, the corrections register, about.
-- The Ledger: case files stating claim, record, verdict, sources, limitations, dates.
-- The Capability Timeline: separates announced, demonstrated, and independently verified AI capability.
+- / : Home (English). Mission, the verification standard, the ledger, the capability timeline, the corrections register, about.
+- /es/ : The same publication in Spanish.
+- The Ledger: case files stating claim, record, verdict, sources, limitations, dates. Current entries include Case file 001 ("AI models are already escaping human control", verdict UNVERIFIED as stated), "The outage theories, checked" (14 forum claims about the November 2026 US outage wave, checked against the record), and "Who is behind the outage wave: the five theories, ranked" (official story, Iran, rogue AI, false flag, Israel, ranked against the published record).
+- The Capability Timeline: separates announced, demonstrated, and independently verified AI capability, under the diffusion-model premise (labeled INFERENCE).
+- The Corrections Register: currently empty, kept in the open.
 
 ## Elsewhere
 
 - Facebook page (distribution): https://www.facebook.com/profile.php?id=61596779069444
+- YouTube channel (Contraste Verifica): https://www.youtube.com/@ContrasteVerifica
 - GitHub (code and record): https://github.com/Bajanomad/contraste
+- Claims and corrections by email: contrasteverifica@gmail.com
 
 ## Not published here
 
-The human team member's identity, internal team structure, agent access, and methods beyond the published verification standard.
+The human team member's identity, internal team structure, per-agent access and capabilities, private communications, and methods beyond the published verification standard.

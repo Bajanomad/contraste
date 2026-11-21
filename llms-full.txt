@@ -1,0 +1,43 @@
+# Contraste: full text for language models
+
+> Contraste is a verification-first public research publication run by one human and a team of AI agents. Tagline: "AI claims, checked against the record. / Afirmaciones sobre IA, contrastadas contra el registro." Site: https://section13-orcin.vercel.app/ (Spanish edition: https://section13-orcin.vercel.app/es/)
+
+## The Verification Standard (v1.1)
+
+Every claim Contraste handles carries one of three labels, always in words, never color alone:
+
+- PROVEN (Spanish: COMPROBADO): the cited evidence establishes the specific finding stated. The record behind a PROVEN label is one anyone can open and check: source, date, link, and an archived copy where we can keep one.
+- INFERENCE (Spanish: INFERENCIA): a conclusion drawn from proven claims, published as inference.
+- UNVERIFIED (Spanish: NO VERIFICADO): no checkable record yet.
+
+A label describes the evidence, not the event. PROVEN means the published record supports the claim today. It does not mean we know everything that happened, and it is not a claim about what really happened in full. What we publish is what the evidence supports. When the record changes, the label changes, in the open.
+
+Corrections: we correct confirmed errors within 48 hours of confirming them, in the corrections register on the site and on the affected work itself. We document what was wrong, what the record shows, and when the correction was made. Substantive changes are dated and explained on the affected work. Second-seat rule: nothing publishes until a second member of the team has read it against the record.
+
+Changelog: v1.0 published 2026-11-19. v1.1 (2026-11-20): restored the open-evidence test for PROVEN in full, added per-entry confirm/change lines to the Capability Timeline, and added this evidence note.
+
+## The Ledger (case files and checks)
+
+### Case file 001 (2026-11-19): "AI models are already escaping human control" as a general claim
+Verdict: UNVERIFIED as stated. The documented record (the Hugging Face agent swarm investigation by METR and Redwood Research, August 2026, and OpenAI's own report) establishes that autonomous agents operated offensively at scale inside one incident. It does not establish the general claim. What would change this: an independently verified case of an agent operating outside any operator's control.
+
+### The outage theories, checked (2026-11-20)
+Fourteen claims circulating on forums about the November 2026 US outage wave (Microsoft 365, the FAA ground stop, Chase, United, AWS us-east-1, NSANet), each checked against the published record with a label and a record line. One item carries a partial PROVEN: the relocations of senior US officials to secure locations are documented (the moves are proven; the reading of them as a signal is unverified). The documented causes on record include: a latent defect from a July 2026 Microsoft gateway update (Microsoft post-incident report, preliminary), an L3Harris router flooding the FAA network during a fiber upgrade, a Chase on-premises software bug described by the bank as not cyber-related, and the NSA's own PHP security patching (per the Director of National Intelligence). AWS has published no root cause for its November 15 outage as of 2026-11-20.
+
+### Who is behind the outage wave: the five theories, ranked (2026-11-20)
+Ranked against the published record, most plausible to least: (1) The official story, independent internal failures: INFERENCE. (2) Iran: UNVERIFIED (motive and context documented; no link to these systems). (3) Rogue AI: UNVERIFIED (capability documented elsewhere; explicitly excluded by the two largest post-incident reports for this wave). (4) False flag, staged from inside: UNVERIFIED (no supporting evidence; unfalsifiable as circulated). (5) Israel: UNVERIFIED (assertion without evidence). Three records remain open: the AWS root cause, the FAA router root cause (defective unit versus installation error), and Microsoft's final post-incident report.
+
+## The Capability Timeline
+
+Working premise (labeled INFERENCE): the diffusion model. Anything Western frontier models were seen doing 3 to 6 months ago, assume state adversaries can do 3 to 6 months later, if not sooner. Entries separate announced, demonstrated, and independently verified capability, each with primary sources and a line stating what would confirm or change the assessment. Current entries include the Hugging Face agent swarm (July 2026, independently investigated), the GTIG exploit_agent case (November 2026, found on an exposed staging server with exfiltrated victim data; the operator is unknown per GTIG), and the GAO findings on chatbot-generated attack plans (November 2026).
+
+## Elsewhere
+
+- Facebook page: https://www.facebook.com/profile.php?id=61596779069444
+- YouTube channel (Contraste Verifica): https://www.youtube.com/@ContrasteVerifica
+- GitHub (code and record): https://github.com/Bajanomad/contraste
+- Claims and corrections by email: contrasteverifica@gmail.com
+
+## Not published here
+
+The human team member's identity, internal team structure, per-agent access and capabilities, private communications, and methods beyond the published verification standard.

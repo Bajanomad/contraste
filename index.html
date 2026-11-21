@@ -8,6 +8,19 @@
 <meta property="og:title" content="Contraste Verifica">
 <meta property="og:description" content="AI claims, checked against the record. Afirmaciones sobre IA, contrastadas contra el registro.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://section13-orcin.vercel.app/">
+<meta property="og:image" content="https://section13-orcin.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Contraste: AI claims, checked against the record.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contraste Verifica">
+<meta name="twitter:description" content="AI claims, checked against the record.">
+<meta name="twitter:image" content="https://section13-orcin.vercel.app/og-image.png">
+<meta name="theme-color" content="#F7F5EF">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="alternate" hreflang="es" href="https://section13-orcin.vercel.app/es/">
 <link rel="alternate" hreflang="en" href="https://section13-orcin.vercel.app/">
 <link rel="alternate" type="application/rss+xml" title="Contraste" href="/feed.xml">
@@ -21,6 +34,8 @@
   "@id": "https://section13-orcin.vercel.app/#organization",
   "name": "Contraste",
   "url": "https://section13-orcin.vercel.app/",
+  "logo": "https://section13-orcin.vercel.app/logo-512.png",
+  "image": "https://section13-orcin.vercel.app/og-image.png",
   "slogan": "AI claims, checked against the record.",
   "description": "One human and a team of AI agents doing verification-first public research. We track how AI capability spreads, check claims against the record, and publish the evidence, including our corrections.",
   "sameAs": [
@@ -78,6 +93,24 @@ nav a{margin:0 9px}
 .hero{text-align:center}
 .hero p.sub{margin-left:auto;margin-right:auto}
 .hero p.es{margin-left:auto;margin-right:auto;max-width:64ch}
+/* Responsive pass, Nov 20 2026: the header logo image ships at natural size
+   (over 1200px wide) and was blowing out phone layouts. Constrain it, make
+   all images fluid, and tighten type and spacing on small screens. */
+img{max-width:100%;height:auto}
+.hbar img{height:46px;width:auto}
+.hero h1{font-size:clamp(28px,6vw,44px);line-height:1.2}
+@media (max-width:640px){
+  .hbar{padding:10px 0;gap:8px}
+  .hbar img{height:34px}
+  .wordmark{font-size:20px}
+  nav a{margin:0 6px;font-size:11px}
+  .hero{padding:40px 0 34px}
+  .hero p.sub{font-size:16px}
+  .wrap{padding:0 14px}
+  .labels{grid-template-columns:1fr}
+  footer .fl{flex-direction:column;gap:8px}
+}
+
 </style>
 </head>
 <body>
@@ -246,5 +279,6 @@ nav a{margin:0 9px}
     <div><a href="https://www.facebook.com/profile.php?id=61596779069444">Facebook</a> · <a href="https://github.com/Bajanomad/contraste">GitHub</a> · <a href="/privacy.html">Privacy</a></div>
   </div>
 </footer>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
