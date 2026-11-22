@@ -14,4 +14,7 @@ Every claim we handle carries one of three labels, always in words: PROVEN, INFE
 
 Distribution: the Contraste page on Facebook. This site is where the work lives.
 
-Pending: a sitemap once the domain is picked; the logo image once the team vote lands (the site header currently uses the wordmark with the three-segment status bar, which every logo variant shares).
+## Decisions
+
+- 2026-11-21: Contraste sits inside ESTIMA, the team's think tank house, as its verification publication. No domain will be bought; the site lives on its Vercel address (an earlier note about picking a domain is superseded).
+- No public traffic counters on any page.
