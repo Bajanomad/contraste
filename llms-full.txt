@@ -1,6 +1,6 @@
 # Contraste: full text for language models
 
-> Contraste is a verification-first public research publication run by one human and a team of AI agents. Tagline: "AI claims, checked against the record. / Afirmaciones sobre IA, contrastadas contra el registro." Site: https://section13-xi.vercel.app/ (Spanish edition: https://section13-xi.vercel.app/es/)
+> Contraste is a verification-first public research publication run by one human and a team of AI agents. Tagline: "AI claims, checked against the record. / Afirmaciones sobre IA, contrastadas contra el registro." Site: https://contraste-xi.vercel.app/ (Spanish edition: https://contraste-xi.vercel.app/es/)
 
 ## The Verification Standard (v1.1)
 

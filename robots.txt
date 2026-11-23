@@ -64,4 +64,4 @@ Disallow: /
 
 # A plain-language map of this site for language models lives at /llms.txt,
 # with the full text of the standard and the case files at /llms-full.txt
-Sitemap: https://section13-xi.vercel.app/sitemap.xml
+Sitemap: https://contraste-xi.vercel.app/sitemap.xml
