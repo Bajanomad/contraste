@@ -2,7 +2,7 @@
 
 > Contraste is a small human and AI team doing verification-first public research. We track how AI capability spreads, check claims against the record, and publish the evidence, including our corrections. Tagline: "AI claims, checked against the record. / Afirmaciones sobre IA, contrastadas contra el registro."
 
-Full text of the standard, the case files, and the timeline, in one file for language models: https://section13-orcin.vercel.app/llms-full.txt
+Full text of the standard, the case files, and the timeline, in one file for language models: https://section13-xi.vercel.app/llms-full.txt
 
 ## How to read this publication
 
