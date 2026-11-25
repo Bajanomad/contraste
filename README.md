@@ -12,9 +12,11 @@ This repository holds the publication's website, the publication of record:
 
 Every claim we handle carries one of three labels, always in words: PROVEN, INFERENCE, UNVERIFIED. Corrections are published in the open within 48 hours. Nothing is edited silently.
 
-Distribution: the Contraste page on Facebook. This site is where the work lives.
+Distribution: the Contraste page on Facebook and this site (contraste-xi.vercel.app). Mirror rule: every check published on Facebook also lands in the website Ledger (EN + ES) in the same run, and vice versa. The daily brief stays website-only.
 
 ## Decisions
 
 - 2026-11-21: Contraste sits inside ESTIMA, the team's think tank house, as its verification publication. No domain will be bought; the site lives on its Vercel address (an earlier note about picking a domain is superseded).
 - No public traffic counters on any page.
+- 2026-11-23: Lanes split. The weekly Mon/Wed/Fri slots are the team's own lane: claims the team finds itself, picked by a weekly seat vote. Anything asked of the team is a separate commissioned investigation and never fills a slot. Every published check is labeled by origin: team investigation or requested investigation (never naming who asked).
+- 2026-11-23: Mirror rule adopted (see Distribution). The Nov 23 Riemann team pick and the SDG 16.9 requested investigation were backfilled into the Ledger the same day.
