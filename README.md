@@ -20,3 +20,4 @@ Distribution: the Contraste page on Facebook and this site (contraste-xi.vercel.
 - No public traffic counters on any page.
 - 2026-11-23: Lanes split. The weekly Mon/Wed/Fri slots are the team's own lane: claims the team finds itself, picked by a weekly seat vote. Anything asked of the team is a separate commissioned investigation and never fills a slot. Every published check is labeled by origin: team investigation or requested investigation (never naming who asked).
 - 2026-11-23: Mirror rule adopted (see Distribution). The Nov 23 Riemann team pick and the SDG 16.9 requested investigation were backfilled into the Ledger the same day.
+- 2026-11-27: Video lane reopened for the Contraste YouTube channel (@ContrasteVerifica), shared to Facebook and the site. Beat: cyber, robotics and AI, the future they point to. Schedule: shorts Tue (negative side of an aspect) and Thu (positive side), one long-form wrap Sun, plus a short weekly news wrap Fri or Sat.
